@@ -1,0 +1,29 @@
+<view class="container">
+
+<view class="title">
+  <text>发 布 通 道</text>
+</view>
+
+<view class="container1">
+</view>
+
+<view class='background'>
+  <view class="content1">
+     <text>发布日期：_____________</text>
+  </view>
+
+  <view class="content2">
+     <text>发布时间段：_____________</text>
+  </view>
+
+  <view class="content3">
+    <text>车位租金：_____________</text>
+  </view>
+</view>
+
+  <view class="content">
+    <text class="confirm-btn">发  布</text>
+  </view>
+          
+
+</view>

@@ -1,0 +1,70 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="moto-container">
+    <view class="line">
+      <view class="jianju-container">
+        <text>遇到的问题</text>
+      </view>
+      <view>
+        <checkbox-group>
+          <view class="hengpai">
+            <view class="hengpaijianju">
+              <label class>
+                <checkbox value="导航" />导航</label>
+            </view>
+            <view class="hengpaijianju2">
+              <label>
+                <checkbox value="定位" />定位</label>
+            </view>
+          </view>
+        </checkbox-group>
+      </view>
+      <view>
+        <checkbox-group>
+          <view class="hengpai">
+            <view class="hengpaijianju">
+              <label>
+                <checkbox value="预约" />预约</label>
+            </view>
+            <view class="hengpaijianju2">
+              <label>
+                <checkbox value="其他" />其他</label>
+            </view>
+          </view>
+        </checkbox-group>
+      </view>
+      <view>
+        <view class="line1">
+        </view>
+        <view class="hengpaijianju3">
+          <text>详细意见:</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="itemView">您的邮箱：
+  <input class="input" name="userName" placeholder="请输入您的邮箱" bindinput="userNameInput" />
+</view>
+<view class="ziti">
+  <text style='color:red'>我们将在5个工作日内将反馈处理结果发至您的邮箱</text>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view> -->

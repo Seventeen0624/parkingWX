@@ -1,0 +1,49 @@
+<view class="container">
+    <form bindsubmit="bindSave">
+
+
+
+<view class="container1">
+</view>
+
+
+    <view class="form-box">
+        <view class="row-wrap">
+            <view class="label">订单时间</view>
+            <view class="label-right">
+                <input name="linkMan" class="input" type="text" placeholder="2018.10.01" value="{{addressData.linkMan}}{{wxaddress.userName}}"/>
+            </view>
+        </view>
+        <view class="row-wrap">
+            <view class="label">地点</view>
+            <view class="label-right">
+                <input name="mobile" class="input" maxlength="11" type="number" placeholder="西安电子科技大学北校区停车场" value="{{addressData.mobile}}{{wxaddress.telNumber}}"/>
+            </view>
+        </view>
+        <view class="row-wrap" bindtap="selectCity">
+            <view class="label">订单金额</view>
+            <picker bindchange="bindPickerProvinceChange" range="{{provinces}}">
+              <view class="picker {{selProvince=='请选择'?'hui':''}}">
+                {{selProvince}}
+              </view>
+            </picker>
+            <picker bindchange="bindPickerCityChange" range="{{citys}}">
+              <view class="picker {{selCity=='请选择'?'hui':''}}">
+                {{selCity}}
+              </view>
+            </picker>
+            <picker bindchange="bindPickerChange" range="{{districts}}">
+              <view class="picker {{selDistrict=='请选择'?'hui':''}}">
+                {{selDistrict}}
+              </view>
+            </picker>
+        </view>
+        
+        
+    </view>
+    
+    <button wx:if="{{!addressData}}" type="primary" class="save-btn" bindtap="readFromWx">确认支付</button>
+    
+    <button type="default" class="cancel-btn" bindtap="bindCancel">取消</button>
+    </form>
+</view>

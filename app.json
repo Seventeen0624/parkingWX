@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/location/location",
+    "pages/my/my",
+    "pages/feedback/feedback",
+    "pages/repair/repair",
+    "pages/ly/search/search",
+    "pages/ly/order-info/order-info",
+    "pages/ly/confirm/confirm",
+    "pages/hsw/order/order",
+    "pages/hsw/order-history/order-history",
+    "pages/hsw/order-unpaid/order-unpaid",
+    "pages/wxl/lock/lock",
+    "pages/wxl/release/release"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

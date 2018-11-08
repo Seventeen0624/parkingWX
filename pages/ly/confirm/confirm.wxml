@@ -1,0 +1,52 @@
+<view class='confirmContainer'>
+  <view class='title'>
+    <text class='titleText'>确认信息</text>
+  </view>
+
+  <form bindsubmit='onSubmit' bindreset='onReset'>
+    <view class='detilContainer'>
+      <text class='detilTitle'>车位详细信息</text>
+
+      <view style='display: flex;flex-direction: raw;'>
+        <image class='detilImage' src="{{imgSrc}}"></image>
+        <text style='margin-left:30rpx;margin-top:30rpx;line-height:70rpx;'>{{detileContent}}</text>
+      </view>
+
+      <view class='timebtnContainer'>
+        <view class='timeBtn'>
+          <!-- <text style="color:#969292">请设置车位使用的预期开始时间</text> -->
+          <picker name="startTime" mode="time" value="{{time}}" bindchange="bindStartTimeChange">
+            <view class="picker">
+              {{startTime}}
+            </view>
+          </picker>
+        </view>
+
+        <view class='timeBtn'>
+          <!-- <text style="color:#969292">请设置车位使用的预期结束时间</text> -->
+          <picker name="endTime" mode="time" value="{{time}}" bindchange="bindEndTimeChange">
+            <view class="picker">
+              {{endTime}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+    <view class='btnContainer'>
+      <!-- <view class='confirmBtn' bindtap="onTap">
+        <text>预约</text>
+      </view>
+
+      <view class='exitBtn' bindtap="onTap2">
+        <text>取消</text>
+      </view> -->
+
+      <button class="confirmBtn" form-type='submit' type='primary'>预约</button>
+      <button class='exitBtn' form-type='reset'>取消</button>
+
+    </view>
+
+
+  </form>
+</view>

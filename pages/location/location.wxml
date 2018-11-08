@@ -1,0 +1,27 @@
+<view class="container">
+  <view class='search'>
+    <icon type='search' size='13' class='search-img' color='#405f80'></icon>
+    <input type='text' placeholder='万地广场' placeholder-class='placeholder' bindfocus='onBindFocus' 
+    bindconfirm='onBindConfirm' bindinput="onBindInput"></input>
+    <image class='xx-image' src='/images/xx.png' wx:if="{{searchPanelShow}}" bindtap='onCancelSearch'></image>
+  </view>
+
+  <view wx:if="{{!searchPanelShow}}">
+    <map id="myMap" style="width: 100%;height:{{map_height}}px" latitude="{{latitude}}" longitude="{{longitude}}" 
+    markers='{{markers}}' include-points='{{points}}' polyline="{{polyline}}" bindmarkertap='onBindMarkerTap' show-location>
+      <cover-view class='moveToLocation'>
+        <cover-image src='/images/circle1.png' catchtap='onMoveToLocation'></cover-image>
+      </cover-view>
+      <cover-view class='private'>
+        <cover-image src='/images/private.png' catchtap='onPrivate'></cover-image>
+      </cover-view>
+    </map>
+    <view class='scanCode' bindtap='onUseParkingSpace'>使用车位</view>
+  </view>
+
+  <view class="map-search-list" wx:if="{{searchPanelShow}}">
+    <view class="map-box" bindtouchstart="bindSearch" wx:for="{{tips}}" wx:key="searchId" data-keywords="{{item.name}}" data-location="{{item.location}}">
+      {{item.name}}
+    </view>
+  </view>
+</view>

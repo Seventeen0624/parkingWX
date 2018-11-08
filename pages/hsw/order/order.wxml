@@ -1,0 +1,6 @@
+<view class="doc-commonNavs" style="background:#fff;">
+  <view class="doc-Navslist">
+    <view wx:for="{{common_navs_list}}" wx:key="{{item}}" class="doc-navTitle" data-id='{{index}}' style="{{index==id?'border-bottom:2px solid #108EE9;color:#138FE9;':''}}" bindtap="NavClick">{{item}}</view>
+  </view>
+  <view wx:for="{{common_title}}" wx:key="{{item}}" class="doc-navnContent" data-id='{{index}}' style="{{index==id?'display:block;':''}}">{{item}}</view>
+</view>

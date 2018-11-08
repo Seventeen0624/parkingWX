@@ -1,0 +1,9 @@
+/**app.wxss**/
+
+page {
+  background-color: #f8f8f8;
+}
+
+.page-body {
+  padding: 20rpx 0;
+}

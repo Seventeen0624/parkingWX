@@ -1,0 +1,46 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="moto-container">
+    <view class="line">
+      <view class="jianju-container">
+        <text>故障原因</text>
+      </view>
+      <view>
+        <checkbox-group>
+          <view class="hengpai">
+            <view class="hengpaijianju">
+              <label class>
+                <checkbox value="导航" />导航</label>
+            </view>
+            <view class="hengpaijianju2">
+              <label>
+                <checkbox value="定位" />定位</label>
+            </view>
+          </view>
+        </checkbox-group>
+      </view>
+      <view>
+        <checkbox-group>
+          <view class="hengpai">
+            <view class="hengpaijianju">
+              <label>
+                <checkbox value="预约" />预约</label>
+            </view>
+            <view class="hengpaijianju2">
+              <label>
+                <checkbox value="其他" />其他</label>
+            </view>
+          </view>
+        </checkbox-group>
+      </view>
+      <view>
+        <view class="line1">
+        </view>
+        <view class="hengpaijianju3">
+          <text>故障详情:</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<button class='btn' type='warn' bindtap='onUploadImage'>上传照片</button>

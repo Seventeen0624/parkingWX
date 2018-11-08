@@ -1,0 +1,60 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebe8e8;
+  height: 100%;
+  margin-top: 20rpx;
+  
+}
+
+.title{
+  margin-top: 0rpx;
+  width: 100%;
+  height: 120rpx;
+  background-color: #35b830;
+  padding-left: 50rpx;
+
+}
+.titleText{
+  font-size: 45rpx;
+  font-weight: bold;
+  line-height: 140rpx;
+  color: #ffffff;
+  letter-spacing: 2px;
+  
+}
+.detilContainer{
+  display: flex;
+  flex-direction: column;
+ 
+  margin-top: 50px;
+  margin-left: 10rpx;
+  border-bottom: 2px solid#ededed;
+  height: 700rpx
+  
+}
+.detilTitle{
+  font-size: 40rpx;
+  letter-spacing: 10rpx;
+  line-height: 100rpx;
+   text-align: center;
+  
+}
+
+.detilImage{
+  margin-top: 60rpx;
+  height: 300rpx;
+  width: 300rpx;
+}
+.confirmBtn{
+  background-color: #62ce5e;
+  border-radius: 15rpx;
+  width:90%;
+  height: 70rpx;
+  text-align: center;
+  line-height: 80rpx;
+  margin-left: 20px;
+  margin-right: 100px;
+  margin-top: 100rpx
+}

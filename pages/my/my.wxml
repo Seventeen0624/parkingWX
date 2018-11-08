@@ -1,0 +1,38 @@
+<!--pages/my/my.wxml-->
+
+<view class="userinfo">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <block wx:else>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+</view>
+
+  <view class="my-item">
+    <navigator url="/pages/hsw/order/order" hover-class="navigator-hover">我的订单</navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/ly/search/search" hover-class="navigator-hover">我的钱包</navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/feedback/feedback" hover-class="navigator-hover">地锁注册</navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/feedback/feedback" hover-class="navigator-hover">意见反馈</navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/repair/repair" hover-class="navigator-hover">我要报修</navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/repair/repair" hover-class="navigator-hover">我要报修</navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="/pages/wxl/lock/lock" hover-class="navigator-hover">wxl</navigator>
+  </view>
+
+<view>
+  <view class='btn'>
+    <button type="warn" bindtap="relogin">重新登录</button>
+  </view>
+  <view class="version">Powered by 研究生活好啊</view>
+</view>

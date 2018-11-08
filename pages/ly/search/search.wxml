@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="title">
+    <text class="titleText">车位检索</text>
+  </view>
+
+  <block wx:for="{{posts_key}}" wx:for-item="item">
+    <view class="detile" catchtap="onPostTap" data-postId="{{item.postId}}">
+       <text class="detileText">{{item.content}}</text>
+    </view>
+  </block>
+
+     <!-- <view class="detile ">
+       <text class="detileText ">位置：丽水\n可预约时间段:21:49:00-22:49:00\n费用：5.0元/小时\n好评度:0</text>
+    </view>
+
+     <view class="detile ">
+        <text class="detileText ">位置：丽水\n可预约时间段:11:49:00-13:49:00\n费用：5.0元/小时\n好评度:0</text>
+    </view> -->
+</view>

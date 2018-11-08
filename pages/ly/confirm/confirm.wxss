@@ -1,0 +1,85 @@
+.confirmContainer{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+   margin-top: 20rpx;
+   margin-bottom: 40rpx;
+  
+}
+.title{
+  border-bottom: 3px solid#ededed;
+  background-color: #35b830;
+  height: 120rpx;
+ 
+}
+.titleText{
+  margin-left: 30rpx;
+  font-size: 45rpx;
+   color: #ffffff;
+  font-weight: bold;
+  line-height: 140rpx;
+  letter-spacing: 2px; 
+}
+.detilContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10rpx;
+  border-bottom: 3px solid#ededed;
+  height: 700rpx
+  
+}
+.detilTitle{
+  font-size: 40rpx;
+  letter-spacing: 10rpx;
+  line-height: 100rpx;
+}
+
+.detilImage{
+  margin-top: 40rpx;
+  height: 300rpx;
+  width: 300rpx;
+}
+.timebtnContainer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 80rpx;
+  text-align: center;
+  
+}
+.timeBtn{
+ width: 90%;
+ margin-left: 20rpx;
+  border: 1px solid #777575;
+  border-radius: 15rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.btnContainer{
+  display: flex;
+  font-size: 20px;
+  flex-direction: row;
+  margin-top: 100rpx;
+ 
+}
+
+.confirmBtn{
+  background-color: #62ce5e;
+  border-radius: 15rpx;
+  width:30%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  margin-left: 20px;
+  margin-right: 100px;
+}
+.exitBtn{
+  background-color: rgb(153, 153, 147);
+  border-radius: 15rpx;
+  width:30%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  margin-right: 20px;
+}
